@@ -1,31 +1,24 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Title</title>
-              
-        <!-- CSS Styles -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+<!DOCTYPE html>
+<html>
+  	<head>
+    	<meta charset="utf-8">
+    	<title>project</title>
     </head>
-    <body>
-
-        <!-- Scripts -->
-        
-        <script src="vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="js/script.js"></script>
-        
-        
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
+  	<body>
+    	<div>
+			<label for="brand">Brand:</label> 
+			<input type="text" name="Brand" id="brand"><br>
+			<label for="model">Model:</label> 
+			<input type="text" name="Model" id="model"><br>
+			<label for="price">Price:</label> 
+			<input type="text" name="Price" id="price"><br>
+			<button id="add-phone" >ADD</button>
+		</div>
+		<div class="validate">
+			<p id="validate-phone"></p>
+		</div>
+		<ul id="list"></ul>
+		
+	<script type="text/javascript" src="js/script.js"></script>
+	</body>
 </html>
