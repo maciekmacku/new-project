@@ -2,12 +2,14 @@ var id = 0;
 var phoneList = [];
 var addBtn = document.getElementById('add-phone');
 
+
+
 // helper functions
 function generateID() {
 	return ++id;
 }
 function validateFields(brand, model, price) {
-	if (brand.length > 0  &&  model.length > 0 && price.length >0){
+	if (brand.length > 0  &&  model.length > 0 && price.length > 0){
 		return true;
 	} else {
 		return false;
@@ -36,9 +38,20 @@ addBtn.addEventListener('click', function(){
 		console.log(newPhone);
 		phoneList.push(newPhone);
 		console.log(phoneList);
+		
 	}
 	
+	var ul = document.getElementById("list");
+	var li = document.createElement("li");
+	li.appendChild(document.createTextNode(newPhone));
+	ul.appendChild(li);
+	
+	
+	
+	
+	
 });
+
 
 
 
